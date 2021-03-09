@@ -3,8 +3,8 @@
 
 <template>
   <div>
-    <LikeHeader></LikeHeader>
-    <LikeNumber></LikeNumber>
+    <LikeHeader :number="6"></LikeHeader>
+    <LikeNumber :number="14"></LikeNumber>
   </div>
 </template>
 
