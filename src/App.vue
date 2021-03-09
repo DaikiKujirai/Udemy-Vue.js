@@ -3,19 +3,35 @@
 
 <template>
   <div>
-    <LikeHeader :number="6"></LikeHeader>
-    <LikeNumber :number="14"></LikeNumber>
+    <LikeHeader headerText="トータルのいいね数"></LikeHeader>
+    <h2>{{number}}</h2>
+    <LikeNumber :total-number="number" @my-click="incrementNumber"></LikeNumber>
+    <LikeNumber :total-number="number"></LikeNumber>
   </div>
 </template>
 
 <script>
 import LikeHeader from "./components/LikeHeader.vue"
-import LikeNumber from './components/LikeNumber.vue'
 
 export default {
+  data() {
+    return {
+      number: 14
+    };
+  },
   components: {
-    LikeHeader,
-    LikeNumber
+    LikeHeader
+  },
+  methods: {
+    incrementNumber(value) {
+      this.number = value
+    }
   }
-}
+};
 </script>
+
+<style scoped>
+  div {
+    border: 1px solid blue;
+  }
+</style>

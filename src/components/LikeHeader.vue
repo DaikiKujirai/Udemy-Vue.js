@@ -1,3 +1,11 @@
 <template>
-  <h1>いいね</h1>
+  <h1>{{ headerText }}</h1>
 </template>
+
+<script>
+
+export default {
+  props: ["headerText"]
+};
+
+</script>
