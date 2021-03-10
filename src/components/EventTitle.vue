@@ -1,6 +1,6 @@
 <template>
   <div>
-    <lavel for="title">タイトル</lavel>
+    <label for="title">タイトル</label>
     <input id="title" type="text" :value="value" @input="$emit('input', $event.target.value)">
 <!-- $event.target.value = input式で入力された内容 -->
 <!-- これを'input'というカスタムイベント名で発火させる -->

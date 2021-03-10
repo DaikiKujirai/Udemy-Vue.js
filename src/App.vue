@@ -17,11 +17,11 @@
       <h2>イベントのフォーム</h2>
       <EventTitle v-model="eventData.title"></EventTitle>
 
-      <lavel for="maxNumber">最大人数</lavel>
+      <label for="maxNumber">最大人数</label>
       <input id="maxNumber" type="number" v-model.number="eventData.maxNumber">
       <p>{{typeof eventData.maxNumber}}</p>
 
-      <lavel for="host">主催者</lavel>
+      <label for="host">主催者</label>
       <input id="host" type="text" v-model.trim="eventData.host">
       <p>{{typeof eventData.host}}</p>
 
@@ -34,18 +34,18 @@
 
       <p>参加条件</p>
       <input type="checkbox" id="10" value="10代" v-model="eventData.target">
-      <lavel for="10">10代</lavel>
+      <label for="10">10代</label>
       <input type="checkbox" id="20" value="20代" v-model="eventData.target">
-      <lavel for="20">20代</lavel>
+      <label for="20">20代</label>
       <input type="checkbox" id="30" value="30代" v-model="eventData.target">
-      <lavel for="30">30代</lavel>
+      <label for="30">30代</label>
       <p>{{eventData.target}}</p>
 
       <p>参加費</p>
       <input type="radio" id="free" value="無料" v-model="eventData.price">
-      <lavel for="free">無料</lavel>
+      <label for="free">無料</label>
       <input type="radio" id="paid" value="有料" v-model="eventData.price">
-      <lavel for="paid">有料</lavel>
+      <label for="paid">有料</label>
 
       <p>開催場所</p>
       <select v-model="eventData.location">
