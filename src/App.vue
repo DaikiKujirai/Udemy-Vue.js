@@ -76,7 +76,7 @@ export default {
         isPrivate: false,  //boolean
         target: [],
         price: "無料",
-        location: "東京"
+        location: []
       }
     };
   },
